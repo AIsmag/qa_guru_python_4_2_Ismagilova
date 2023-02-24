@@ -14,4 +14,4 @@ def test_positive_in_russian(open_google):
 
 def test_negative_in_english(open_google):
     browser.element('[name="q"]').should(be.blank).type('gfhhdfhfhfhfghhfhf').press_enter()
-    browser.element('[id="search"]').should(have.text('ничего не найдено'))
+    browser.element('[class="card-section"]').should(have.text('ничего не найдено'))
